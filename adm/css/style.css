@@ -1,0 +1,392 @@
+﻿
+/* Estilos para a barra de navegação */
+.nav {
+    background-color: rebeccapurple;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    font-family: "Gotham", sans-serif;
+}
+
+    .nav ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 40px;
+        display: flex;
+    }
+
+        .nav ul li {
+            margin-right: 20px; /* Espaçamento entre os links */
+        }
+
+            .nav ul li a {
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+                .nav ul li a:hover {
+                    color: #333333;
+                }
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    font-family: "Gotham", sans-serif;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    font-family: "Gotham", sans-serif;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+#modalExibirCartas {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    font-family: "Gotham", sans-serif;
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    font-family: "Gotham", sans-serif;
+}
+
+/* Fechar modal */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* Estilos para os cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: "Gotham", sans-serif;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+/* Estilos para o modal da Zona de Monstros */
+#modalMonstro {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: "Gotham", sans-serif;
+}
+
+/* Estilos para o modal da Zona de Armadilhas e Magias */
+#modalAM {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: "Gotham", sans-serif;
+}
+
+/* Estilos para o modal do Cemitério */
+#modalCemiterio {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: "Gotham", sans-serif;
+}
+
+/* Estilos para o modal da Zona Deck Principal */
+#modalDeck {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: "Gotham", sans-serif;
+}
+
+/* Estilos para o modal da Zona de Campo */
+#modalCampo {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: "Gotham", sans-serif;
+}
+
+/* Estilos para o modal da Zona Deck Adicional */
+#modalAdicional {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: "Gotham", sans-serif;
+}
+
+/* Estilos para o modal da Zona de Pêndulo */
+#modalPendulo {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: "Gotham", sans-serif;
+}
+
+#btnZonaMonstro {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-family: "Gotham", sans-serif;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+}
+
+#btnZonaAM {
+    background-color: deepskyblue;
+    color: white;
+    border-radius: 5px;
+    font-family: "Gotham", sans-serif;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+}
+
+#btnCemiterio {
+    background-color: mediumpurple;
+    color: white;
+    border-radius: 5px;
+    font-family: "Gotham", sans-serif;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+}
+
+#btnDeck {
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+    font-family: "Gotham", sans-serif;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+}
+
+#btnCampo {
+    background-color: forestgreen;
+    color: white;
+    border-radius: 5px;
+    font-family: "Gotham", sans-serif;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+}
+
+#btnAdicional {
+    background-color: #cd8d00;
+    color: white;
+    border-radius: 5px;
+    font-family: "Gotham", sans-serif;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+}
+
+#btnPendulo {
+    background-color: darkslategray;
+    color: white;
+    border-radius: 5px;
+    font-family: "Gotham", sans-serif;
+    font-weight: bold;
+    height:50px;
+    width: 200px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+    /* Estilos para os botões */
+    #buttons > * {
+        margin: 5px; /* Espaçamento entre os botões */
+    }
+
+#btnCadastrarCartas,
+#btnExibirCartas {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px; /* Adiciona um espaço entre os botões */
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 5px;
+    font-family: "Gotham", sans-serif;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.cartas-container {
+    display: flex;
+    flex-wrap: wrap; /* Para lidar com múltiplas linhas se houver muitas cartas */
+    justify-content: flex-start; /* Ajuste para alinhamento horizontal */
+}
+
+/* Estilos para a div dos detalhes do usuário */
+div {
+    font-family: "Gotham", sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+/* Estilos para a GridView */
+#gvUsuarios {
+    font-family: "Gotham", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    /* Estilos para as células */
+    #gvUsuarios th,
+    #gvUsuarios td {
+        border: 1px solid #663399; /* Roxo */
+        padding: 8px;
+        text-align: left;
+    }
+
+    /* Estilo para o cabeçalho da tabela */
+    #gvUsuarios th {
+        background-color: #663399; /* Roxo */
+        color: #ffffff; /* Branco */
+    }
+
+    /* Alterando as cores das linhas alternadas, se desejar */
+    #gvUsuarios tr:nth-child(even) {
+        background-color: #f8f8f8; /* Cor de fundo para linhas pares */
+    }
+
+    #gvUsuarios tr:nth-child(odd) {
+        background-color: #ffffff; /* Cor de fundo para linhas ímpares */
+    }
+
+
+.logout {
+    text-align: right;
+    padding: 10px;
+}
+
+    .logout a {
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #663399;
+        padding: 8px 16px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+        .logout a:hover {
+            background-color: purple;
+        }

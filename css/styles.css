@@ -1,0 +1,90 @@
+﻿/* Reset básico para limpar estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: "Gotham", Arial, sans-serif;
+    background-color: #ffffff; 
+    color: #333333; 
+}
+
+/* Estilos para a barra de navegação */
+.nav {
+    background-color: rebeccapurple; 
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+    .nav ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 40px;
+        display:flex;
+    }
+
+        .nav ul li {
+            margin-right: 20px; /* Espaçamento entre os links */
+        }
+
+            .nav ul li a {
+                text-decoration: none;
+                color: #ffffff; 
+                font-size: 20px; 
+                font-weight: bold;
+            }
+
+                .nav ul li a:hover{
+                    color:#333333;
+                }
+
+
+/* Estilos para o formulário */
+.form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o formulário */
+}
+
+    .form p {
+        margin-bottom: 15px;
+    }
+
+/* Estilo para os campos de entrada */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc; 
+    border-radius: 4px;
+}
+
+/* Estilo para o botão */
+button,
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #8a2be2; 
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Centraliza o botão */
+}
+
+    button:hover,
+    input[type="submit"]:hover {
+        background-color: #9932cc; 
+    }

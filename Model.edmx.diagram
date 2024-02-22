@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c23f3dab697e4ceba187b7026ee4e621" Name="Diagram1">
+        <EntityTypeShape EntityType="DatabaseModel.Carta" Width="1.5" PointX="3" PointY="4.875" />
+        <EntityTypeShape EntityType="DatabaseModel.LogAcesso" Width="1.5" PointX="5.25" PointY="1.25" />
+        <EntityTypeShape EntityType="DatabaseModel.Perfil" Width="1.5" PointX="0.75" PointY="1.375" />
+        <EntityTypeShape EntityType="DatabaseModel.Usuario" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="DatabaseModel.Zona" Width="1.5" PointX="0.75" PointY="5.125" />
+        <AssociationConnector Association="DatabaseModel.FK_Cartas_Zonas" />
+        <AssociationConnector Association="DatabaseModel.FK_LogAcesso_Usuario" />
+        <AssociationConnector Association="DatabaseModel.FK_Usuario_Perfil" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
